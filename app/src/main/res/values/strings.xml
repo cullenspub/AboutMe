@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Cullen Davis</string>
+    <string name="profile_pic">Picure Of Cullen Davis</string>
+    <string name="bio">Languages / Scripting: Swift 5, Java, JavaScript, TypeScript,  C++11, C, SQL, bash, Groovy
+\n\nTesting: JUnit, JMocket, Arquillian, Mockito, SoapUI
+\n\nFrameworks: UIKit, Angular, Node.js, ReactiveX, RxJS, Spring Boot, Spring Core, Spring Web Services, Spring MVC, Spring REST, Spring Data, Spring Integration, Spring Batch, Orika, J2E, Log4J, Lombok, JAXB, OSGi, GDAL, GeoTools, Struts, Puppet, NodeJs
+\n\nDatabase: Postgres, Liquibase, Oracle, PostGIS, MySQL/Maria SQL Server
+\n\nServlet / App Containers: WebLogic, Tomcat, JBoss AS, JBoss ESB, Karaf
+\n\nMessaging: Spring JMS, ActiveMQ, AMQP
+\n\nData Markup / Representation: Material Web, XML / XSD, JSON, Turtle, YAML, HTML, CSS
+\n\nContinuous Integration: Rational Team Concert, Bamboo, Hudson, Jenkins, Cruise Control
+\n\nBuild: Maven, Gradle, Ant, CMake, make
+\n\nSource Code Mgmt: Rational Team Concert, subversion, git
+\n\nOS: RHEL Linux, Windows, CentOS, Fedora, MacOS
+\n\nVirtualization: KVM, VMware,  Amazon EC2
+\n\nMobile: iOS
+</string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
+    <string name="done">Done</string>
+</resources>
