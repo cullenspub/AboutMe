@@ -8,23 +8,32 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.cjd.learning.aboutme.data.MyName
+import com.cjd.learning.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+    private val myName = MyName("Cullen Davis")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var setNickname = findViewById<Button>(R.id.done_button)
-        setNickname.setOnClickListener{v-> addNickname(v)}
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.myName = myName
+        val view = binding.root
+        setContentView(view)
+        binding.doneButton.setOnClickListener {v-> addNickname(v)}
     }
 
     private fun addNickname(view: View) {
-        val editText = findViewById<EditText>(R.id.nick_name_edit)
-        val nickNameText = findViewById<TextView>(R.id.nickname_text)
-        nickNameText.text = editText.text
-        editText.visibility = View.GONE
-        view.visibility = View.GONE
-        nickNameText.visibility = View.VISIBLE
+        binding.apply {
+            myName?.nickName = nickNameEdit.text.toString()
+            invalidateAll()
+            nickNameEdit.visibility = View.GONE
+            doneButton.visibility = View.GONE
+            nicknameText.visibility = View.VISIBLE
+        }
 
         //hide the keyboard
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager

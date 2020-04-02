@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">About Me</string>
-    <string name="name">Cullen Davis</string>
     <string name="profile_pic">Picure Of Cullen Davis</string>
     <string name="bio">Languages / Scripting: Swift 5, Java, JavaScript, TypeScript,  C++11, C, SQL, bash, Groovy
 \n\nTesting: JUnit, JMocket, Arquillian, Mockito, SoapUI
